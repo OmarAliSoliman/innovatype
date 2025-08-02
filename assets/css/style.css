@@ -1415,6 +1415,179 @@ p {
   border-bottom-right-radius: 8px;
 }
 
+.single_product_page_header {
+  height: calc(100vh - 250px);
+}
+.single_product_page_header p {
+  font-size: 1.5rem;
+}
+.single_product_page_header .header_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.single_product_page_header .title h5 {
+  font-size: 2.8rem;
+  color: #0d014d;
+}
+.single_product_page_header .title h5 span {
+  color: #cd9900;
+}
+.single_product_page_header .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+}
+.single_product_page_header .links a {
+  background-image: none;
+  padding: 0 0;
+}
+.single_product_page_header .header_img_right {
+  position: absolute;
+  bottom: -30px;
+  right: 50px;
+}
+.single_product_page_header .header_img_left {
+  position: absolute;
+  bottom: -20px;
+  left: 50px;
+}
+
+.app_features_page {
+  background-color: #f6f6fe;
+  padding: 65px 0;
+  margin-top: -100px;
+  position: relative;
+  z-index: 2;
+}
+.app_features_page .app_features_page_wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.app_features_page .app_features_page_wave_2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.app_features_page .header_strip {
+  margin: auto;
+  margin-bottom: 24px;
+}
+.app_features_page .title {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #3e3e3e;
+}
+.app_features_page .why_funun_card {
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.app_features_page .why_funun_card .card_icon {
+  width: 55px;
+  height: 55px;
+  margin-left: 15px;
+}
+.app_features_page .why_funun_card .card_icon img {
+  width: 25px;
+}
+.app_features_page .why_funun_card h5 {
+  font-size: 0.9rem;
+}
+.app_features_page .why_funun_card p {
+  font-size: 0.8rem;
+}
+
+.footer {
+  background-color: #0d014d;
+  padding: 80px 0;
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+.footer .footer_div .footer_title {
+  color: #e3e3e3;
+  font-size: 1.2rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 25px;
+}
+.footer .footer_div .footer_title::after {
+  content: "";
+  width: 70%;
+  background-color: #20b2aa;
+  bottom: -17px;
+  position: absolute;
+  height: 3px;
+  right: 0;
+  border-radius: 5px;
+}
+.footer .footer_div p {
+  color: #fff;
+  font-size: 1rem;
+}
+.footer .footer_div li {
+  margin-bottom: 10px;
+}
+.footer .footer_div li a {
+  color: #fff;
+  font-size: 1rem;
+}
+.footer .form-group {
+  height: 65px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+.footer .form-group .form-control {
+  height: 100%;
+  border-radius: 0;
+  border: 0;
+  border-radius: 10px;
+  padding-left: 105px;
+}
+.footer .form-group button {
+  background-image: linear-gradient(to right, #30bdc4, #0969b6);
+  color: #fff;
+  width: 105px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.footer .social a {
+  color: #fff;
+  margin: 0 15px;
+}
+.footer .social a i {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.footer .line {
+  margin-top: 30px;
+}
+.footer .line hr {
+  color: rgba(255, 255, 255, 0.9568627451);
+}
+.footer .copy {
+  text-align: center;
+}
+.footer .copy h5 {
+  color: #fff;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-top: 10px;
+}
+
 /* Shared styles  */
 .inner_custom_header .custom_breadcrumb li a::after {
   font-family: "Font Awesome 5 Free";

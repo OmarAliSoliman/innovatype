@@ -1521,6 +1521,187 @@ p {
     }
   }
 }
+.single_product_page_header {
+  height: calc(100vh - 250px);
+  p {
+    font-size: 1.5rem;
+  }
+  .header_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    h5 {
+      font-size: 2.8rem;
+      color: #0d014d;
+      span {
+        color: #cd9900;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+    a {
+      background-image: none;
+      padding: 0 0;
+    }
+  }
+  .header_img_right {
+    position: absolute;
+    bottom: -30px;
+    right: 50px;
+  }
+  .header_img_left {
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+  }
+}
+
+.app_features_page {
+  background-color: #f6f6fe;
+  padding: 65px 0;
+  margin-top: -100px;
+  position: relative;
+  z-index: 2;
+  .app_features_page_wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .app_features_page_wave_2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .header_strip {
+    margin: auto;
+    margin-bottom: 24px;
+  }
+  .title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #3e3e3e;
+  }
+  .why_funun_card {
+    border-radius: 8px;
+    margin-bottom: 24px;
+    .card_icon {
+      width: 55px;
+      height: 55px;
+      margin-left: 15px;
+      img {
+        width: 25px;
+      }
+    }
+    h5 {
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.footer {
+  background-color: #0d014d;
+  padding: 80px 0;
+  margin-top: 80px;
+  padding-bottom: 50px;
+  .footer_div {
+    .footer_title {
+      color: #e3e3e3;
+      font-size: 1.2rem;
+      position: relative;
+      width: fit-content;
+      margin-bottom: 25px;
+      &::after {
+        content: "";
+        width: 70%;
+        background-color: #20b2aa;
+        bottom: -17px;
+        position: absolute;
+        height: 3px;
+        right: 0;
+        border-radius: 5px;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 1rem;
+    }
+    li {
+      margin-bottom: 10px;
+      a {
+        color: #fff;
+        font-size: 1rem;
+      }
+    }
+  }
+  .form-group {
+    height: 65px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    .form-control {
+      height: 100%;
+      border-radius: 0;
+      border: 0;
+      border-radius: 10px;
+      padding-left: 105px;
+    }
+    button {
+      background-image: linear-gradient(
+        to right,
+        rgba(#30bdc4, 1),
+        rgba(#0969b6, 1)
+      );
+      color: #fff;
+      width: 105px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      border: 0;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+  .social {
+    a {
+      color: #fff;
+      margin: 0 15px;
+      i {
+        color: #fff;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .line {
+    margin-top: 30px;
+    hr {
+      color: #fffffff4;
+    }
+  }
+  .copy {
+    text-align: center;
+    h5 {
+      color: #fff;
+      font-size: 0.8rem;
+      margin: 0;
+      margin-top: 10px;
+    }
+  }
+}
 
 // #404040
 
