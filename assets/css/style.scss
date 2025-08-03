@@ -302,7 +302,7 @@ p {
     }
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     color: #535353;
     margin-bottom: 30px;
     position: relative;
@@ -334,7 +334,8 @@ p {
 }
 
 .inner_custom_header {
-  height: calc(100vh - 300px);
+  height: auto;
+  padding: 100px 0;
   .header_strip {
     margin: auto;
   }
@@ -408,9 +409,9 @@ p {
 }
 
 .inner_custom_header_2 {
-  height: calc(100vh - 300px);
+  // height: calc(100vh - 300px);
   .header_img {
-    width: 460px !important;
+    width: 380px !important;
     left: 180px;
   }
   .custom_breadcrumb {
@@ -422,10 +423,14 @@ p {
 }
 
 .inner_custom_header_custom_height {
-  height: calc(100vh - 450px);
+  // height: calc(100vh - 350px);
   display: flex;
   align-items: center;
-  padding: 50px 0;
+  padding: 100px 0;
+}
+.mm-btn--next:after,
+.mm-btn--prev:before {
+  transform: rotate(318deg);
 }
 
 .header_strip {
@@ -567,8 +572,8 @@ p {
 }
 .why_choose_us_card {
   background-color: #ffffff;
-  width: fit-content;
-  padding: 25px 80px;
+  width: 100%;
+  padding: 25px;
   border-radius: 16px;
   text-align: center;
   margin-top: 48px;
@@ -790,6 +795,7 @@ p {
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    flex: none;
     i {
       color: #0055ff;
       font-size: 1.5rem;
@@ -811,7 +817,7 @@ p {
 }
 
 .our_works_tabs_container {
-  padding: 80px;
+  padding: 80px 0;
   .nav {
     display: flex;
     align-items: center;
@@ -1414,6 +1420,7 @@ p {
 
 .steps_to_done_card {
   text-align: center;
+  margin-bottom: 20px;
   .card_icon {
     width: 85px;
     height: 85px;
@@ -1449,8 +1456,10 @@ p {
     ul {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       li {
         margin: 0 8px;
+        margin-bottom: 5px;
         a {
           width: 45px;
           height: 45px;
@@ -1566,10 +1575,18 @@ p {
   }
 }
 
+.single_product_about_service {
+  position: relative;
+  .about_service_img {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
 .app_features_page {
   background-color: #f6f6fe;
   padding: 65px 0;
-  margin-top: -100px;
+  // margin-top: -100px;
   position: relative;
   z-index: 2;
   .app_features_page_wave {
@@ -1594,6 +1611,7 @@ p {
   .why_funun_card {
     border-radius: 8px;
     margin-bottom: 24px;
+    width: 100%;
     .card_icon {
       width: 55px;
       height: 55px;
@@ -1699,6 +1717,293 @@ p {
       font-size: 0.8rem;
       margin: 0;
       margin-top: 10px;
+    }
+  }
+}
+
+.colm_reveers {
+  .icon_nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .why_funun .why_funun_cards .custom_margin_right {
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .single_product_page_header .header_img_left,
+  .single_product_page_header .header_img_right {
+    width: 300px;
+    top: -100px;
+  }
+  .screens_mobile_slider {
+    .slider_item {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .single_product_page_header .header_img_left,
+  .single_product_page_header .header_img_right {
+    width: 350px;
+    top: 30px;
+  }
+  .screens_mobile_slider {
+    .slider_item {
+      margin: 0 10px;
+    }
+  }
+  .inner_custom_header_custom_height,
+  .inner_custom_header_custom_height {
+    // height: calc(100vh - 250px);
+  }
+  .inner_custom_header_2 .header_img {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .single_product_page_header .header_img_left,
+  .single_product_page_header .header_img_right {
+    width: 300px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .single_product_page_header .header_img_left,
+  .single_product_page_header .header_img_right {
+    width: 200px;
+    top: 20px;
+    opacity: 0.3;
+  }
+  .about_service p {
+    line-height: normal;
+  }
+  .download_app .download_app_img {
+    left: 0;
+    width: 65%;
+  }
+  .why_funun .why_funun_cards .custom_margin_right {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom_navbar .links {
+    display: none;
+  }
+  .custom_header p {
+    font-size: 1.2rem;
+  }
+  .single_product_page_header .header_img_left,
+  .single_product_page_header .header_img_right {
+    opacity: 0.2;
+  }
+  .about_service p,
+  h5 {
+    position: relative;
+    z-index: 3;
+  }
+  .about_service_img {
+    // opacity: 0.2;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    img {
+      margin: auto;
+    }
+  }
+  .single_product_about_service .about_service_img {
+    opacity: 0.2;
+  }
+
+  .why_funun_card {
+    padding: 12px;
+  }
+  .app_features_page .why_funun_card .card_icon {
+    margin-left: 8px;
+  }
+  .download_app {
+    .download_app_content {
+      position: relative;
+      z-index: 3;
+    }
+    .download_app_img {
+      opacity: 0.4;
+    }
+  }
+  .footer {
+    .footer_div:first-child {
+      margin-bottom: 30px;
+    }
+  }
+  .footer .form-group {
+    height: 55px;
+  }
+  .home_about .home_about_img {
+    margin-top: 15px;
+    text-align: center;
+    img {
+      margin: auto;
+      width: 50%;
+    }
+  }
+  // .col-order-1-in-mobile{
+  //   order: 1;
+  // }
+  // .col-order-2-in-mobile{
+  //   order: 2;
+  // }
+  .blogs_filter {
+    margin-top: 30px;
+  }
+  .custom_header p {
+    font-size: 1.1rem;
+  }
+  .contact_us {
+    .contact_form {
+      margin-top: 20px !important;
+    }
+  }
+  .our_works_tabs_container {
+    .navs_wrapper {
+      .nav {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .our_works_tabs_container .nav .nav-item {
+    width: max-content;
+    min-width: 150px;
+    margin: 0 5px;
+  }
+  .inner_custom_header_2 .header_img {
+    opacity: 0.2;
+    left: 0;
+  }
+  .why_funun .why_funun_cards .custom_margin_right {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .why_funun_card {
+    width: 100% !important;
+  }
+  .why_funun .why_funun_cards {
+    margin-top: 80px;
+  }
+  .custom_navbar {
+    .logo2030 {
+      display: none !important;
+    }
+  }
+  .inner_custom_header .header_img {
+    display: none;
+  }
+  .colm_reveers {
+    flex-direction: row-reverse;
+    .icon_nav {
+      display: block;
+      i {
+        color: #000;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .custom_navbar {
+    padding: 6px 0;
+    .logo {
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+
+  .home_about .home_about_content h5 {
+    line-height: normal;
+  }
+  .home_about .about_statistics {
+    padding: 13px;
+  }
+  .home_about .about_statistics .static_num p {
+    font-size: 0.9rem;
+  }
+  .top_header .location {
+    margin-right: 15px;
+  }
+  .top_header select,
+  .top_header span {
+    font-size: 0.7rem;
+  }
+  .top_header .social {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+  .custom_navbar {
+    padding: 20px 0;
+  }
+  .single_product_page_header {
+    height: auto;
+    min-height: 70vh;
+  }
+  .single_product_page_header .title h5 {
+    font-size: 2.5rem;
+  }
+  .why_choose_us_card {
+    img {
+      width: 50%;
+    }
+  }
+  .certificate_card,
+  .custom_certificates_section .certificate_card {
+    width: calc(100% / 3);
+  }
+  .blog_card .card_img {
+    height: 116px;
+  }
+  .blog_card .card_body h5 {
+    font-size: 1.1rem;
+  }
+  .inner_custom_header .our_work_tabs ul {
+    width: 80%;
+  }
+  .work_card .card_img {
+    height: 160px;
+  }
+  .about_app_section {
+    .about_app_section_img {
+      width: 50%;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+  }
+  .single_post_content .card_img {
+    height: 130px;
+  }
+  .inner_custom_header .custom_breadcrumb {
+    ul {
+      flex-wrap: wrap;
+    }
+  }
+  .custom_navbar .logo{
+    img{
+      width: 40px;
     }
   }
 }

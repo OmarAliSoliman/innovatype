@@ -26,10 +26,46 @@
 <body>
 
 
+
+  <div class="splashscreen">
+    <div class="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <nav id="menu">
+    <ul>
+      <li class="active">
+        <a href="">الرئيسية</a>
+      </li>
+      <li>
+        <a href="">من نحن</a>
+      </li>
+      <li>
+        <a href="">خدمتنا</a>
+      </li>
+      <li>
+        <a href="">اعمالنا</a>
+      </li>
+      <li>
+        <a href="">منتجاتنا</a>
+      </li>
+      <li>
+        <a href="">المدونة</a>
+      </li>
+      <li>
+        <a href="">تواصل معنا</a>
+      </li>
+    </ul>
+  </nav>
+
   <div class="top_header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-8">
+        <div class="col-sm-12 col-md-8 col-lg-8">
           <div class="wrap d-flex align-items-center">
             <div class="lang d-flex align-items-center">
               <i class="fas fa-globe"></i>
@@ -44,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-4 col-lg-4">
           <div class="social d-flex align-items-center justify-content-end">
             <span>تواصل معنا :</span>
             <ul class="list-unstyled d-flex align-items-center">
@@ -63,13 +99,13 @@
 
   <div class="custom_navbar">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center colm_reveers">
         <div class="col-6 col-md-3 col-lg-2">
           <div class="logo">
             <a href=""><img src="./assets/images/logo.svg" alt=""></a>
           </div>
         </div>
-        <div class="col-6 col-md-6 col-lg-8">
+        <div class="col-6 col-md-6 col-lg-8 d-none d-md-block">
           <div class="links">
             <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
               <li class="active"><a href="">الرئيسية</a></li>
@@ -85,6 +121,9 @@
         <div class="col-6 col-md-3 col-lg-2">
           <div class="logo2030 d-flex justify-content-end">
             <a href=""><img src="./assets/images/logo2030.svg" alt=""></a>
+          </div>
+          <div class="icon_nav">
+            <a href="#menu"><i class="fas fa-bars"></i></a>
           </div>
         </div>
       </div>
@@ -125,7 +164,7 @@
   <div class="about_service">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="about_service_content">
             <div class="header_strip">
               <span class="first_dot"></span>
@@ -141,7 +180,7 @@
             </p>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="about_service_img text-center">
             <img src="./assets/images/about-serv.png" alt="">
           </div>
@@ -154,7 +193,7 @@
   <div class="why_funun">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="why_funun_content">
             <div class="header_strip">
               <span class="first_dot"></span>
@@ -176,7 +215,7 @@
             </a>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="why_funun_cards">
             <div class="why_funun_card d-flex align-items-center custom_margin_right">
               <div class="card_icon">
@@ -304,7 +343,7 @@
       <p class="title">عملية تطوير شاملة تمر بخطوت منهجية لتحويل فكرتك الي منتج فعال</p>
       <div class="steps_to_done_cards">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-6 col-md-4 col-lg-4">
             <div class="steps_to_done_card">
               <div class="card_icon">
                 <img src="./assets/images/step-1.svg" alt="">
@@ -316,7 +355,7 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-6 col-md-4 col-lg-4">
             <div class="steps_to_done_card">
               <div class="card_icon">
                 <img src="./assets/images/step-2.svg" alt="">
@@ -328,7 +367,7 @@
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="col-6 col-md-4 col-lg-4">
             <div class="steps_to_done_card">
               <div class="card_icon">
                 <img src="./assets/images/step-3.svg" alt="">
@@ -343,8 +382,6 @@
       </div>
     </div>
   </div>
-
-
 
   <div class="certificates_section custom_certificates_section">
     <div class="container">
@@ -421,12 +458,10 @@
     </div>
   </div>
 
-
-
   <div class="contact_us contact_us_certificate">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="contact_contetn">
             <div class="header_strip">
               <span class="first_dot"></span>
@@ -481,7 +516,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="contact_form mt-0">
             <form action="">
               <div class="form-group">
@@ -610,6 +645,82 @@
     </div>
   </div>
 
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="footer_div">
+            <h5 class="footer_title">عن الشركة</h5>
+            <p class="col-lg-9">
+              نحن شركة سعودية متخصصة في التحول الرقمي و تقديم الاستشارات التقنية. تسعي لتمكين المؤسسات في القطاعين
+              الحكومي و الخاص من تسريع وتيرة التحول الرقمي و تحقيق اعلي مستويات الكفاءة و الابتكار
+            </p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer_div">
+            <h5 class="footer_title">روابط سريعة</h5>
+            <ul class="list-unstyled">
+              <li><a href="">الرئيسية</a></li>
+              <li><a href="">من نحن</a></li>
+              <li><a href="">خدمتنا</a></li>
+              <li><a href="">اعمالنا</a></li>
+              <li><a href="">منتجاتنا</a></li>
+              <li><a href="">الرصد الاعلامي</a></li>
+              <li><a href="">المدونة</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer_div">
+            <h5 class="footer_title">ابرز الخدمات</h5>
+            <ul class="list-unstyled">
+              <li><a href="">تطوير الواقع</a></li>
+              <li><a href="">تطوير تطبيقات الجوال</a></li>
+              <li><a href="">تطوير متاجر الكترونية</a></li>
+              <li><a href="">تصميم الهوية التجارية</a></li>
+              <li><a href="">خدمات الواتس اب</a></li>
+              <li><a href="">التسويق الالكتروني</a></li>
+              <li><a href="">تصميم موشن جرافيك</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer_div">
+            <h5 class="footer_title">اشترك في خدمة البريد الالكتروني</h5>
+            <p>ابقي علي اطلاع دائم بكل ما يهمك في نشرتنا البريدية المجانية</p>
+            <form action="">
+              <div class="form-group">
+                <button>ارسال</button>
+                <input type="text" class="form-control" placeholder="البريد الالكتروني">
+              </div>
+            </form>
+          </div>
+          <div class="social">
+            <ul class="list-unstyled d-flex align-items-center justify-content-center mt-4">
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="line">
+        <hr>
+      </div>
+
+      <div class="copy">
+        <h5>© 2025 Inovvabyte. جميع الحقوق محفوظة.</h5>
+      </div>
+    </div>
+  </div>
 
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>

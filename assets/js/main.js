@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(".parterns_slider").slick({
       slidesToShow: 7,
       slidesToScroll: 1,
-      arrows: true,
+      arrows: false,
       dots: false,
       speed: 1000,
       infinite: true,
@@ -28,7 +28,7 @@ $(document).ready(function () {
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 4,
             // centerMode: false,
           },
         },
@@ -55,7 +55,7 @@ $(document).ready(function () {
     $(".screens_mobile_slider").slick({
       slidesToShow: 5,
       slidesToScroll: 5,
-      arrows: true,
+      arrows: false,
       dots: true,
       speed: 3000,
       infinite: true,
@@ -98,7 +98,7 @@ $(document).ready(function () {
     $(".works_done_slider").slick({
       slidesToShow: 3,
       slidesToScroll: 3,
-      arrows: true,
+      arrows: false,
       dots: true,
       infinite: true,
       loop: true,
@@ -117,7 +117,7 @@ $(document).ready(function () {
         {
           breakpoint: 991,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             // centerMode: false,
           },
         },
@@ -125,7 +125,7 @@ $(document).ready(function () {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             // centerMode: false,
           },
         },
@@ -184,20 +184,17 @@ $(document).ready(function () {
 });
 
 $(window).on("load", function () {
-  // $("html").removeClass("splash-active");
-  // var currentDir = $("a").css("direction");
-  // $(".splashscreen").addClass("splashscreen_none");
-  // new Mmenu("#menu", {
-  //   offCanvas: {
-  //     slidingSubmenus: false,
-  //     position: currentDir == "rtl" ? "right-front" : "left-front",
-  //   },
-  //   theme: "light",
-  //   counters: {
-  //     add: true,
-  //   },
-  // });
-  // $(".mm-navbar__title").text("القائمة");
+  $("html").removeClass("splash-active");
+  var currentDir = $("a").css("direction");
+  $(".splashscreen").addClass("splashscreen_none");
+  new Mmenu("#menu", {
+    offCanvas: {
+      slidingSubmenus: false,
+      position: currentDir == "rtl" ? "right-front" : "left-front",
+    },
+    theme: "light",
+  });
+  $(".mm-navbar__title").text("القائمة");
 });
 
 $(window).on("load", function () {
